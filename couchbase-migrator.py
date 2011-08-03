@@ -27,7 +27,8 @@ Options:
 
  -d <destination>, --destination=<destination>
      Data destination that will be exported to
-
+"""
+    """
  -o, --overwrite
      Overwrite any items that are in the destination
 

@@ -132,10 +132,15 @@ def parse_args(argv):
 if __name__ == "__main__":
     config = parse_args(sys.argv)
 
+    count = 0
+
     reader = couchmigrator.reader(config.source)
     writer = couchmigrator.writer(config.destination)
     for record in reader:
         writer.write(record)
+        count += 1
 
     reader.close()
     writer.close()
+
+    print 'migrated {0} items'.format(count)

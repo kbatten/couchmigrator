@@ -28,7 +28,6 @@ Destinations:
      json:<filename>
 
 
-
 File formats:
  csv
 "id","a","b","c"
@@ -42,7 +41,15 @@ File formats:
 {"id": "key3", "value": {"a": "3", "c": "baz", "b": "z"}}
 
 
+Requires:
+ couchbase-python-client
+  https://github.com/couchbase/couchbase-python-client
+
+ python-couchdb
+  http://code.google.com/p/couchdb-python
+
 
 Todo:
  Support either add or set for couchbase/membase/memcached destinations
  Support flags and expiry for couchbase/membase/memcached destinations
+ Figure out how to deal with attachments from couchdb

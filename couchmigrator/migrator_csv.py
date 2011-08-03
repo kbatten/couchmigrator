@@ -17,7 +17,7 @@ class CSVReader(couchmigrator.migrator.Reader):
         data = self.reader.next()
         if data:
             record = {'id':data['id']}
-            record['value'] = dict((k,v) for (k,v) in data.iteritems() if k != 'id' or not k.startswith('_'))
+            record['value'] = dict((k,v) for (k,v) in data.iteritems() if k != 'id' and not k.startswith('_'))
             return record
         else:
             raise StopIteration()

@@ -37,9 +37,9 @@ File formats:
 "key3",3,"z","baz"
 
  json
-{"id": "key1", "value": {"a": "1", "c": "foo", "b": "x", "id": "key1"}}
-{"id": "key2", "value": {"a": "2", "c": "bar", "b": "y", "id": "key2"}}
-{"id": "key3", "value": {"a": "3", "c": "baz", "b": "z", "id": "key3"}}
+{"id": "key1", "value": {"a": "1", "c": "foo", "b": "x"}}
+{"id": "key2", "value": {"a": "2", "c": "bar", "b": "y"}}
+{"id": "key3", "value": {"a": "3", "c": "baz", "b": "z"}}
 
 
 

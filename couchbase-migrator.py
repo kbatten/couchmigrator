@@ -136,3 +136,6 @@ if __name__ == "__main__":
     writer = couchmigrator.writer(config.destination)
     for record in reader:
         writer.write(record)
+
+    reader.close()
+    writer.close()

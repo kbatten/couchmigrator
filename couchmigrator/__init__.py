@@ -28,4 +28,4 @@ def writer(loc):
 #    elif kind.lower() == 'couchdb':
 #        return CouchdbWriter(fp)
     elif kind.lower() == 'couchbase':
-        return CouchdbWriter(fp)
+        return CouchbaseWriter(fp)

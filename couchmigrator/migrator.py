@@ -8,9 +8,15 @@ class Reader(object):
     def next(self):
         raise NotImplementedError
 
+    def close(self):
+        pass
+
 class Writer(object):
     def __init__(self, fp):
         pass
 
     def write(self):
         raise NotImplementedError
+
+    def close(self):
+        pass

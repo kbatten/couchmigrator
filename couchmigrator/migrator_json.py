@@ -13,7 +13,7 @@ class JSONReader(couchmigrator.migrator.Reader):
         data = self.reader.next()
         if data:
             try:
-                json_data = json.loads(data.strip('\n,'))
+                json_data = json.loads(data.strip('\n\r,'))
             except ValueError:
                 raise StopIteration()
             record = {'id':json_data['id']}

@@ -1,3 +1,6 @@
+sources=[{'type':'csv','class':'CSVReader','example':'csv:<filename>'}]
+destinations=[]
+
 import csv
 
 import couchmigrator.migrator

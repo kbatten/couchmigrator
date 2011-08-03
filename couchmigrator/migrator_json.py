@@ -1,3 +1,6 @@
+sources=[{'type':'json','class':'JSONReader','example':'json:<filename>'}]
+destinations=[{'type':'json','class':'JSONWriter','example':'json:<filename>'}]
+
 import json
 
 import couchmigrator.migrator

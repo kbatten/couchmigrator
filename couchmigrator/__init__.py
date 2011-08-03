@@ -8,6 +8,17 @@ from migrator_json import JSONReader, JSONWriter
 #from migrator_couchdb import CouchdbReader, CouchdbWriter
 from migrator_couchbase import CouchbaseReader, CouchbaseWriter
 
+sources = []
+destinations = []
+
+sources.extend(migrator_couchbase.sources)
+sources.extend(migrator_csv.sources)
+sources.extend(migrator_json.sources)
+
+destinations.extend(migrator_couchbase.destinations)
+destinations.extend(migrator_csv.destinations)
+destinations.extend(migrator_json.destinations)
+
 def reader(loc):
     kind, fp = loc.split(':', 1)
     if kind.lower() == 'csv':

@@ -41,15 +41,17 @@ Options:
 """
     print "Sources:"
     for source in couchmigrator.sources:
-        print " " + source['type'] + "(" + source['class'] + ")"
+        print " " + source['type']
         print "     " + source['example']
+        print
 
     print
 
     print "Destinations:"
     for destination in couchmigrator.destinations:
-        print " " + destination['type'] + "(" + destination['class'] + ")"
+        print " " + destination['type']
         print "     " + destination['example']
+        print
 
         """
 Sources:

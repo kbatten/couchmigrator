@@ -1,3 +1,7 @@
+
+sources=[]
+destinations=[{'type':'couchbase','class':'CouchbaseWriter','example':'couchbase:username:password@example.com:8091/bucket'}]
+
 import re
 import json
 

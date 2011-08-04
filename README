@@ -53,3 +53,4 @@ Todo:
  Support either add or set for couchbase/membase/memcached destinations
  Support flags and expiry for couchbase/membase/memcached destinations
  Figure out how to deal with attachments from couchdb
+ Speed up loading into couchbase, its painfully slow currently
